@@ -1,0 +1,43 @@
+Git and Github
+
+rm -rf .git 
+	◦	To remove the .git folder
+
+.gitignore
+	◦	Add the name of the files to be ignored by git for staging
+	◦	*.log
+	◦	dir/ will ignore dir folder in every level in the current directory 
+	◦	/dir/ will ignore dir folder in the current directory only
+	◦	Empty folders are ignored by git
+
+git remote add origin (doubt)
+	◦	Push local repo to origin to connect to remote repo
+
+git push -u origin branchname
+	◦	Push whatever is in origin to branchname
+
+git checkout -b branchname
+	◦	Create a branch with name “branchname”
+
+git checkout branchname 
+	◦	To switch to branchname
+
+git config —global user.name “saramith”
+git config —global user.email “sarayumithu2001@gmail.com”
+	◦	Setting up credentials to be shown in the git log
+
+ls -a
+	◦	Lists even the hidden files present
+
+ls -l
+	◦	Lists the files in long format
+
+The following process is done once for a user’s account:
+
+Public SSH key:
+	◦	Anyone can use it to push code into my repo. But i need to accept the request.
+
+Private SSH key:
+	◦	Can push code without my approval
+
+After adding SSH key or token or authenticating myself, i can push code into the remote repo. To establish a connection between the client and the remote environment
